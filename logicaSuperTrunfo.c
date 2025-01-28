@@ -31,47 +31,47 @@ int main()
     printf("***********************\n");
  
             // Cadastro da primeira cidade
-
-    printf("Digite a primeira cidade: ");
+   
+    printf("Primeira cidade: ");
     scanf(" %30[^\n]", cidade1); // usado esse formato pois algumas cidades possuem espaço
     //fgets(cidade1, 20, stdin);
 
-    printf("Digite a Sigla do primeiro estado: ");
+    printf("Sigla do estado: ");
     scanf(" %s", estado1);
 
-    printf("Digite a quantidade de Habitantes: ");
+    printf("Habitantes: ");
     scanf(" %d", &habitantes1);
 
-    printf("Digite qual a area da cidade: ");
+    printf("Area: ");
     scanf(" %d", &area1);
 
-    printf("Digite Qual e o PIB da cidade: ");
+    printf("PIB: ");
     scanf(" %li", &PIB1);
 
-    printf("Digite o numero de Pontos turisticos da cidade: ");
+    printf("Pontos turisticos : ");
     scanf(" %d", &numero_de_pontos_turisticos1);
 
     printf("\nCadastro feito com sucesso\n\n");
 
             //Cadastro da segunda carta
 
-    printf("Digite a segunda cidade: ");
+    printf("Segunda cidade: ");
     scanf(" %30[^\n]", cidade2); // usado esse formato pois algumas cidades possuem espaço
     //fgets(cidade1, 20, stdin);
 
-    printf("Digite a sigla do segundo estado: ");
+    printf("Sigla do Estado: ");
     scanf(" %s", estado2);
 
-    printf("Digite a quantidade de Habitantes: ");
+    printf("Habitantes: ");
     scanf(" %d", &habitantes2);
 
-    printf("Digite qual a area da cidade: ");
+    printf("Area: ");
     scanf(" %d", &area2);
 
-    printf("Digite Qual e o PIB da cidade: ");
+    printf("PIB: ");
     scanf(" %li", &PIB2);
 
-    printf("Digite o numero de Pontos turisticos da cidade: ");
+    printf("Pontos Turisticos: ");
     scanf(" %d", &numero_de_pontos_turisticos2);
 
         // a partir daqui sera feita a impressão dos resultados
@@ -122,9 +122,9 @@ int main()
 
     printf("\nResutado:\n"); // O resultado é baseado na cidade com menor densidade populacional
 
-    if(densidade1 > densidade2) {                   //se densidade1 for maior que densidade2
+    if(densidade1 < densidade2) {                   //se densidade1 for maior que densidade2
     printf("%s é a vencedora pois tem a densidade populacional menor !\n", cidade1);
-    } else if (densidade1 < densidade2) {           //se densidade1 for menor que densidade2
+    } else if (densidade1 > densidade2) {           //se densidade1 for menor que densidade2
     printf("%s é a vencedora pois tem a densidade populacional menor !\n", cidade2);
     } else {                                        //se o resultado for diferente, considerar empate
     printf("Incrivel... Deu empate \n");
